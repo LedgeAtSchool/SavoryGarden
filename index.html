@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Savory Garden</title>
+    <style>
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header Styles */
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  /* Navigation Styles */
+  nav {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  nav a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+  }
+
+  #menu {
+    overflow: hidden;
+  }
+
+  .card {
+    box-sizing: border-box;
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card h2 {
+    margin: 10px;
+  }
+
+  .card p {
+    margin: 10px;
+    font-size: 0.8em;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0;
+  }
+</style>
+  </head>
+  <body>
+    <header>
+      <h1>Savory Garden</h1>
+      <p>Fresh, garden-inspired dishes</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <form action="#" method="get">
+        <input type="text" name="search" placeholder="Search...">
+        <button type="submit">Go</button>
+      </form>
+    </nav>
+    <main>
+      <section id="home">
+        <h2>Welcome to Savory Garden</h2>
+        <p>We are a restaurant that specializes in fresh, garden-inspired dishes. Our menu features a variety of appetizers, entrees, desserts, and beverages made with locally-sourced and organic ingredients whenever possible.</p>
+        <p>Whether you're looking for a romantic dinner for two or a family-friendly brunch, we have something for everyone. We also offer catering services for special events and parties.</p>
+      </section>
+      <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6cEc5txsP_BN1cvQjcUjwK9yMnEoLGnTx1A&usqp=CAU" alt="Appetizer">
+          <h3>Appetizers</h3>
+          <ul>
+            <li>Bruschetta</li>
+            <li>Caprese Salad</li>
+            <li>Roasted Beet Hummus</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtbynPi8bpQNGVSP4YgeEW0SEqb1ckS7eRSg&usqp=CAU" alt="Entree">
+          <h3>Entrees</h3>
+          <ul>
+            <li>Veggie Flatbread Pizza</li>
+            <li>Grilled Chicken with Asparagus</li>
+            <li>Wild Salmon with Quinoa</li>
+          </ul>
+        </div>
+        <div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Ov6jrEoaXZc4ZZRLdNbQ9BvgT49oFrGaeg&usqp=CAU" alt="Dessert">
+          <h3>Desserts</h3>
+          <ul>
+            <li>Chocolate Truffles</li>
+            <li>Berry Tart</li>
+            <li>Lemon Sorbet</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTre769V0R4_G9Jt_5pCKICJ1juvn632uoRFw&usqp=CAU" alt="Beverage">
+          <h3>Beverages</h3>
+          <ul>
+            <li>Organic Wine</li>
+            <li>Craft Beer</li>
+            <li>Fresh-Squeezed Juice</li>
+          </ul>
+        </div>
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>At Savory Garden, we are passionate about using fresh, locally-sourced ingredients to create delicious and healthy dishes. Our chefs have years of experience and are committed to using sustainable and eco-friendly practices in the kitchen.</p>
+        <p>We also believe in giving back to our community. That's why we partner with local farmers and donate a portion of our profits to organizations that support sustainable agriculture and food access.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or comment? We'd love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.</p>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Savory Garden. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
